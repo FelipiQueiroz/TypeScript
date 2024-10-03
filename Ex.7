@@ -1,0 +1,14 @@
+function processarValor(valor: string | number): number {
+  if (typeof valor === "string") {
+    return valor.length;
+  } else {
+    return valor * 2;
+  }
+}
+
+// Exemplos de uso
+const tamanho = processarValor("Olá");
+console.log(tamanho); // Saída: 3
+
+const dobro = processarValor(10);
+console.log(dobro); // Saída: 20
