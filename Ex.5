@@ -1,0 +1,14 @@
+function encontrarMaiorValor(numeros: number[]): number | undefined {
+  if (numeros.length === 0) {
+    return undefined; // Retorna undefined se o array estiver vazio
+  }
+  return Math.max(...numeros);
+}
+
+// Exemplos de uso
+const valores = [10, 5, 20, 8];
+const maior = encontrarMaiorValor(valores);
+console.log(maior); // Saída: 20
+
+const vazio: number[] = [];
+console.log(encontrarMaiorValor(vazio)); // Saída: undefined
